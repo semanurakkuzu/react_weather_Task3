@@ -7,6 +7,7 @@ function App() {
       <div className="pt-10 text-zinc-500">
         <p className="text-center text-7xl pb-10">Weather</p>
        
+        <Cards></Cards>
         </div>
     </div>
   );
