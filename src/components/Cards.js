@@ -18,7 +18,7 @@ function Cards() {
 // This function fetches data from the API based on the province information
   function getWeatherData(province) {
     axios(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${province.latitude}&lon=${province.longitude}&appid=f5244eae4e81b70362d7814803f0069c`
+      `http://api.openweathermap.org/data/2.5/forecast?lat=${province.latitude}&lon=${province.longitude}&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}`
     )
       .then((res) => setWeatherData(res.data))
       .catch((e) => console.log(e))
